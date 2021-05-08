@@ -14,7 +14,7 @@ import org.eclipse.microprofile.reactive.messaging.Emitter;
 public class OrderMakerService {
 
     @Inject
-    @Channel("orders-out")
+    @Channel("web-orders-out")
     Emitter<Order> emitter;
 
     private static final Logger LOGGER = Logger.getLogger("OrderMakerService");
